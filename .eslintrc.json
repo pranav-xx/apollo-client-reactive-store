@@ -37,6 +37,22 @@
         "jest": true
       },
       "rules": {}
+    },
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser",
+      "rules": {
+        "@nx/dependency-checks": [
+          "error",
+          {
+            "buildTargets": ["build", "custom-build"], // add non standard build target names
+            "ignoredDependencies": ["lodash"], // these libs will be omitted from checks
+            "checkMissingDependencies": true, // toggle to disable
+            "checkObsoleteDependencies": true, // toggle to disable
+            "checkVersionMismatches": true // toggle to disable
+          }
+        ]
+      }
     }
   ]
 }

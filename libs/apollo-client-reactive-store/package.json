@@ -1,0 +1,9 @@
+{
+  "name": "apollo-client-reactive-store",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "reflect-metadata": "^0.1.13",
+    "core-js": "^3.32.0",
+    "@apollo/client": "3.7.17"
+  }
+}

@@ -5,8 +5,8 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    // "paths": {
+    //   "apollo-client-reactive-store": [
+    //     "libs/apollo-client-reactive-store/src/index.ts"
+    //   ]
+    // }
   },
   "exclude": ["node_modules", "tmp"]
 }

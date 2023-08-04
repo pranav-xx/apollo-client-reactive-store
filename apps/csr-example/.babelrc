@@ -1,18 +1,26 @@
 {
   "presets": [
     [
-      "@nx/react/babel",
+      "@nrwl/react/babel",
       {
-        "runtime": "automatic"
+        "runtime": "automatic",
+        "importSource": "react",
+        "useBuiltIns": "usage",
+        "decorators": {
+          "decoratorsBeforeExport": true,
+          // "legacy": true
+        },
+        "classProperties": {
+          "loose": false
+        }
       }
     ]
   ],
   "plugins": [
     [
-      "styled-components",
+      "@babel/plugin-proposal-decorators",
       {
-        "pure": true,
-        "ssr": true
+        "version": "2022-03"
       }
     ]
   ]
