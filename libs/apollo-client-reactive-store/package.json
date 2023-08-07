@@ -6,5 +6,10 @@
     "core-js": "^3.32.0",
     "@apollo/client": "3.7.17"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranav-xx/apollo-client-reactive-store",
+    "directory": "libs/apollo-client-reactive-store"
+  },
   "license": "MIT"
 }
