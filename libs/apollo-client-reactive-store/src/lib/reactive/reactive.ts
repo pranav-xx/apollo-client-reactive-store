@@ -5,7 +5,6 @@ export function reactive(value: any, context: any) {
     if (context.kind === 'accessor') {
       return {
         get() {
-          //@ts-ignore
           const className = this.constructor.name;
           const fieldName = context.name;
   
@@ -22,7 +21,6 @@ export function reactive(value: any, context: any) {
         },
   
         init(initialValue: any) {
-          //@ts-ignore
           const className = this.constructor.name;
           const fieldName = context.name;
           if (!stores.has(className)) {
